@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         "main-background-color": "hsl(225, 100%, 98%)",
+        "secondary-background-color": "hsl(0, 0%, 100%)",
         "main-color": "hsl(230, 17%, 14%)",
         "secondary-color": "hsl(228, 12%, 44%)",
         "toggle-theme-btn": "hsl(230, 22%, 74%)",

@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.toggle-theme-btn-light {
+	@apply absolute top-[50%] right-1 bg-secondary-background-color w-4 h-4 rounded-full translate-y-[-50%] transition-all duration-200;
+}
+
+.toggle-theme-btn-dark {
+	@apply absolute top-[50%] right-6 bg-secondary-background-color w-4 h-4 rounded-full translate-y-[-50%] transition-all duration-200;
+}
