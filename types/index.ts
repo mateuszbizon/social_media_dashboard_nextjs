@@ -6,4 +6,15 @@ export type SocialDataType = {
     isIncreasing: boolean;
     followers: string;
     followersType: string;
+    views: {
+        viewsType: string;
+        viewsAmount: string;
+        viewsProcent: string;
+        isIncreasing: boolean;
+    }
+    likes: {
+        likesAmount: string;
+        likesProcent: string;
+        isIncreasing: boolean;
+    }
 }
