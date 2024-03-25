@@ -8,7 +8,7 @@ type FollowersCardProps = {
 
 function FollowersCard({ socialData }: FollowersCardProps) {
 	return (
-		<div className='w-[300px] bg-card-background-color rounded-lg'>
+		<div className='w-full bg-card-background-color rounded-lg'>
 			<div className='w-full h-1 bg-twitter-color rounded-t-lg'></div>
 			<div className='flex flex-col gap-4 py-7'>
 				<div className='flex gap-3 justify-center items-center'>

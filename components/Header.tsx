@@ -5,7 +5,7 @@ function Header() {
 	return (
 		<header className='bg-main-background-color px-6 py-7 pb-10 flex flex-col gap-y-5'>
 			<div>
-				<h1 className='text-main-color font-bold text-2xl mb-1'>
+				<h1 className='text-main-color font-bold text-xl mb-1'>
 					Social Media Dashboard
 				</h1>
 				<p className='text-secondary-color font-bold'>
