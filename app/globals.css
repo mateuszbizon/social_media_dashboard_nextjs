@@ -9,3 +9,11 @@
 .toggle-theme-btn-dark {
 	@apply absolute top-[50%] right-6 bg-secondary-background-color w-4 h-4 rounded-full translate-y-[-50%] transition-all duration-200;
 }
+
+.main-x-padding {
+	@apply px-6 sm:px-14 md:px-28 lg:px-44
+}
+
+.card-width {
+	@apply w-full sm:w-[250px] lg:w-[270px]
+}
