@@ -8,6 +8,7 @@ export const socialData: SocialDataType[] = [
 		altIcon: "facebook icon",
 		isIncreasing: true,
 		followers: "1987",
+		followersToday: "12",
 		followersType: "followers",
 		views: {
 			viewsAmount: "87",
@@ -28,6 +29,7 @@ export const socialData: SocialDataType[] = [
 		altIcon: "twitter icon",
 		isIncreasing: true,
 		followers: "1044",
+		followersToday: "99",
 		followersType: "followers",
 		views: {
 			viewsAmount: "117",
@@ -48,6 +50,7 @@ export const socialData: SocialDataType[] = [
 		altIcon: "instagram icon",
 		isIncreasing: true,
 		followers: "11k",
+		followersToday: "1099",
 		followersType: "followers",
 		views: {
 			viewsAmount: "52k",
@@ -68,6 +71,7 @@ export const socialData: SocialDataType[] = [
 		altIcon: "youtube icon",
 		isIncreasing: false,
 		followers: "8239",
+		followersToday: "144",
 		followersType: "subscribers",
 		views: {
 			viewsAmount: "1407",

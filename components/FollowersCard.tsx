@@ -31,7 +31,9 @@ function FollowersCard({ socialData }: FollowersCardProps) {
 						height={12}
 						alt={socialData.isIncreasing ? "arrow up icon" : "arrow down icon"}
 					/>
-					<span className={socialData.isIncreasing ? 'text-lime-green' : 'text-bright-red'}>12 Today</span>
+					<span className={socialData.isIncreasing ? 'text-lime-green' : 'text-bright-red'}>
+						{socialData.followersToday} Today
+					</span>
 				</div>
 			</div>
 		</div>

@@ -5,6 +5,7 @@ export type SocialDataType = {
     altIcon: string;
     isIncreasing: boolean;
     followers: string;
+    followersToday: string;
     followersType: string;
     views: {
         viewsType: string;
