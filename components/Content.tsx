@@ -17,11 +17,22 @@ function Content() {
 					Overview - Today
 				</p>
 				<div className='flex flex-col gap-3'>
-					{socialData.map(social => {
+					{socialData.map((social, index) => {
+						const isElementEven = (index + 1) % 2 == 0 ? true : false;
+
 						return (
 							<div key={social.socialMedia} className='flex flex-col gap-3'>
-								<ViewsCard socialData={social} />
-								<LikesCard socialData={social} />
+								{isElementEven ? (
+									<>
+										<LikesCard socialData={social} />
+										<ViewsCard socialData={social} />
+									</>
+								) : (
+									<>
+										<ViewsCard socialData={social} />
+										<LikesCard socialData={social} />
+									</>
+								)}
 							</div>
 						);
 					})}
