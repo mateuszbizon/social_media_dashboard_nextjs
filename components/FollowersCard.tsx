@@ -18,13 +18,13 @@ function FollowersCard({ socialData }: FollowersCardProps) {
 						height={20}
 						alt={socialData.altIcon}
 					/>
-					<span>{socialData.username}</span>
+					<span className="text-secondary-color dark:text-dark-secondary-color">{socialData.username}</span>
 				</div>
 				<div className='flex flex-col gap-2 items-center'>
-					<span className='text-main-color font-bold text-5xl'>
+					<span className='text-main-color dark:text-dark-main-color font-bold text-5xl'>
 						{socialData.followers}
 					</span>
-					<span className='text-secondary-color uppercase'>
+					<span className='text-secondary-color dark:text-dark-secondary-color uppercase'>
 						{socialData.followersType}
 					</span>
 				</div>

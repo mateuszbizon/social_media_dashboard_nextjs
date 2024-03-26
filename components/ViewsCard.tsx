@@ -10,11 +10,11 @@ function ViewsCard({ socialData } : ViewsCardProps) {
   return (
     <div className='flex flex-col gap-6 card-width card-bg rounded-lg py-7 px-5'>
         <div className='flex justify-between items-center'>
-            <span className='text-secondary-color font-bold'>{socialData.views.viewsType}</span>
+            <span className='text-secondary-color dark:text-dark-secondary-color font-bold'>{socialData.views.viewsType}</span>
             <Image src={socialData.icon} width={20} height={20} alt={socialData.altIcon} />
         </div>
         <div className='flex justify-between items-end'>
-            <span className='text-main-color text-4xl font-bold'>{socialData.views.viewsAmount}</span>
+            <span className='text-main-color dark:text-dark-main-color text-4xl font-bold'>{socialData.views.viewsAmount}</span>
             <div className='flex gap-1 items-center'>
                 <Image
                     src={socialData.views.isIncreasing ? "/images/icon-up.svg" : "/images/icon-down.svg"}

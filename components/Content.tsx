@@ -6,14 +6,14 @@ import LikesCard from "./LikesCard";
 
 function Content() {
 	return (
-		<main className='absolute top-[170px] md:top-[110px] w-full flex flex-col gap-10 main-x-padding'>
+		<main className='absolute top-[170px] md:top-[110px] w-full flex flex-col gap-10 main-x-padding dark:bg-dark-secondary-background-color'>
 			<div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5'>
 				{socialData.map(social => {
 					return <FollowersCard key={social.socialMedia} socialData={social} />;
 				})}
 			</div>
 			<div>
-				<p className='text-secondary-color text-2xl mb-5 font-bold'>
+				<p className='text-secondary-color dark:text-dark-main-color text-2xl mb-5 font-bold'>
 					Overview - Today
 				</p>
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-x-5'>
