@@ -7,7 +7,7 @@
 }
 
 .toggle-theme-btn-dark {
-	@apply absolute top-[50%] right-6 bg-secondary-background-color w-4 h-4 rounded-full translate-y-[-50%] transition-all duration-200;
+	@apply absolute top-[50%] right-6 dark:bg-dark-secondary-background-color w-4 h-4 rounded-full translate-y-[-50%] transition-all duration-200;
 }
 
 .main-x-padding {
@@ -16,4 +16,8 @@
 
 .card-width {
 	@apply w-full;
+}
+
+.card-bg {
+	@apply bg-card-background-color dark:bg-dark-card-background-color;
 }

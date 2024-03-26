@@ -8,7 +8,7 @@ type ViewsCardProps = {
 
 function ViewsCard({ socialData } : ViewsCardProps) {
   return (
-    <div className='flex flex-col gap-6 card-width bg-card-background-color rounded-lg py-7 px-5'>
+    <div className='flex flex-col gap-6 card-width card-bg rounded-lg py-7 px-5'>
         <div className='flex justify-between items-center'>
             <span className='text-secondary-color font-bold'>{socialData.views.viewsType}</span>
             <Image src={socialData.icon} width={20} height={20} alt={socialData.altIcon} />

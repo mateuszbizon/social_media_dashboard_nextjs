@@ -30,7 +30,7 @@ function ToggleThemeButton() {
     
     return (
 		<button
-			className='w-11 h-6 bg-toggle-theme-btn rounded-full relative'
+			className='w-11 h-6 bg-toggle-theme-btn dark:bg-dark-toggle-theme-btn rounded-full relative'
 			onClick={handleSetIsDarkMode}>
 			<div
 				className={
