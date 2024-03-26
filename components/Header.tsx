@@ -3,7 +3,7 @@ import ToggleThemeButton from "./ToggleThemeButton";
 
 function Header() {
 	return (
-		<header className='bg-main-background-color dark:bg-dark-main-background-color main-x-padding py-7 pb-10 flex flex-col md:flex-row md:justify-between gap-y-5'>
+		<header className='bg-main-background-color dark:bg-dark-main-background-color main-x-padding pt-7 pb-32 flex flex-col md:flex-row md:justify-between gap-y-5'>
 			<div>
 				<h1 className='text-main-color dark:text-dark-main-color font-bold text-xl lg:text-3xl mb-1'>
 					Social Media Dashboard
