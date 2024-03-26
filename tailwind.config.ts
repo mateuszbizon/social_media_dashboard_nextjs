@@ -6,6 +6,7 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -21,6 +22,12 @@ const config: Config = {
         "instagram-color": "hsl(37, 97%, 70%) to hsl(329, 70%, 58%)",
         "lime-green": "hsl(163, 72%, 41%)",
         "bright-red": "hsl(356, 69%, 56%)",
+        "dark-main-background-color": "hsl(232, 19%, 15%)",
+        "dark-secondary-background-color": "hsl(230, 17%, 14%)",
+        "dark-main-color": "hsl(228, 34%, 66%)",
+        "dark-secondary-color": "hsl(0, 0%, 100%)",
+        "dark-card-background-color": "hsl(228, 28%, 20%)",
+        "dark-toggle-theme-btn": "linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%)",
       }
     },
   },

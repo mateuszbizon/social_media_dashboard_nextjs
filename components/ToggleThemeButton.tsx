@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function ToggleThemeButton() {
 	const [isDarkMode, setIsDarkMode] = useState(false);
@@ -8,6 +8,25 @@ function ToggleThemeButton() {
 	function handleSetIsDarkMode() {
 		setIsDarkMode(prev => !prev);
 	}
+
+	useEffect(() => {
+		const theme = localStorage.getItem("theme");
+
+		if (theme === "dark") {
+			setIsDarkMode(true);
+		}
+	}, [])
+
+	useEffect(() => {
+		if (isDarkMode) {
+			document.documentElement.classList.add("dark");
+			localStorage.setItem("theme", "dark")
+			return;
+		}
+
+		document.documentElement.classList.remove("dark");
+		localStorage.setItem("theme", "light")
+	}, [isDarkMode])
     
     return (
 		<button
