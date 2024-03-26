@@ -22,7 +22,7 @@ function ViewsCard({ socialData } : ViewsCardProps) {
                     height={12}
                     alt={socialData.views.isIncreasing ? "arrow up icon" : "arrow down icon"}
                 />
-                <span className={socialData.views.isIncreasing ? 'text-lime-green' : 'text-bright-red'}>
+                <span className={`text-xs font-bold ${socialData.views.isIncreasing ? 'text-lime-green' : 'text-bright-red'}`}>
                     {socialData.views.viewsProcent}%
                 </span>
             </div>

@@ -18,7 +18,9 @@ function FollowersCard({ socialData }: FollowersCardProps) {
 						height={20}
 						alt={socialData.altIcon}
 					/>
-					<span className="text-secondary-color dark:text-dark-secondary-color">{socialData.username}</span>
+					<span className='text-secondary-color dark:text-dark-secondary-color'>
+						{socialData.username}
+					</span>
 				</div>
 				<div className='flex flex-col gap-2 items-center'>
 					<span className='text-main-color dark:text-dark-main-color font-bold text-5xl'>
@@ -40,9 +42,9 @@ function FollowersCard({ socialData }: FollowersCardProps) {
 						alt={socialData.isIncreasing ? "arrow up icon" : "arrow down icon"}
 					/>
 					<span
-						className={
+						className={`text-sm font-bold ${
 							socialData.isIncreasing ? "text-lime-green" : "text-bright-red"
-						}>
+						}`}>
 						{socialData.followersToday} Today
 					</span>
 				</div>

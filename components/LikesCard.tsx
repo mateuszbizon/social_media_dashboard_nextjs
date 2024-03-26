@@ -22,7 +22,7 @@ function LikesCard({ socialData } : LikesCardProps) {
                     height={12}
                     alt={socialData.likes.isIncreasing ? "arrow up icon" : "arrow down icon"}
                 />
-                <span className={socialData.likes.isIncreasing ? 'text-lime-green' : 'text-bright-red'}>
+                <span className={`text-xs font-bold ${socialData.likes.isIncreasing ? 'text-lime-green' : 'text-bright-red'}`}>
                     {socialData.likes.likesProcent}%
                 </span>
             </div>
