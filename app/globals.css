@@ -19,5 +19,5 @@
 }
 
 .card-bg {
-	@apply bg-card-background-color dark:bg-dark-card-background-color;
+	@apply bg-card-background-color dark:bg-dark-card-background-color hover:bg-card-background-color-hover dark:hover:bg-dark-card-background-color-hover cursor-pointer;
 }
